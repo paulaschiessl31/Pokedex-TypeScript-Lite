@@ -1,1 +1,1 @@
-console.log("Projeto iniciado!")
+console.log("Pokédex iniciada!");

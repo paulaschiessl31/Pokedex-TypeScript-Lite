@@ -1,19 +1,28 @@
 {
-  "name": "projeto-senai--pokeapi",
+  "name": "pokedex-typescript-lite",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mini projeto de Pokédex com Node.js e TypeScript",
   "main": "index.js",
   "scripts": {
     "dev": "tsx src/main.ts",
+    "start": "tsx src/main.ts",
     "build": "tsc",
-    "start": "node dist/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulaschiessl31/Pokedex-TypeScript-Lite.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
+  "bugs": {
+    "url": "https://github.com/paulaschiessl31/Pokedex-TypeScript-Lite/issues"
+  },
+  "homepage": "https://github.com/paulaschiessl31/Pokedex-TypeScript-Lite#readme",
   "devDependencies": {
+    "@types/node": "^26.3.0",
     "tsx": "^4.23.12",
     "typescript": "^7.0.2"
   }
