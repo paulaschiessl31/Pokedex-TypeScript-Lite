@@ -22,7 +22,7 @@ export async function buscarPokemon(
         const dados = await resposta.json() as PokemonApiResponse;//Converte a resposta em JSON.
 
         //RF06- Mapeamento da resposta da API
-        // map transforma os tipos da API em uma lista de nomes.
+        // RF11 - Array map() transforma os tipos da API em uma lista de nomes.
 
         const pokemon: PokemonResumo = {
             id: dados.id,

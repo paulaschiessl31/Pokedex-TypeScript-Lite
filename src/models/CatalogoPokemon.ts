@@ -7,8 +7,8 @@ export class CatalogoPokemon {
     private pokemons: PokemonResumo[] = [];
 
     // RF08 - Adicionar Pokémon ao catálogo.
-    // Verifica se o Pokémon já existe pelo ID antes de adicionar.
     adicionar(pokemon: PokemonResumo): void { 
+        // RF11 - Métodos de array- some() verifica se o Pokémon já existe pelo ID.
         const jaExiste = this.pokemons.some((item) => item.id === pokemon.id); 
 
         if (jaExiste) {
@@ -27,7 +27,7 @@ export class CatalogoPokemon {
             console.log("[AVISO] Catálogo vazio."); 
             return; 
         } 
-
+        // RF11 - forEach() percorre o array e mostra cada Pokémon.
         this.pokemons.forEach((pokemon) => {
             console.log(
                 `#${pokemon.id} - ${pokemon.nome} | Tipos: ${pokemon.tipos.join(",")}`
@@ -36,7 +36,7 @@ export class CatalogoPokemon {
     }
 
     // RF10 - Remover Pokémon do catálogo pelo ID.
-    // Verifica se o Pokémon existe e remove usando filter().
+    // RF11 - Verifica se o Pokémon existe e remove usando filter().
     remover(id: number): void {
         const existe = this.pokemons.some(
             (pokemon) => pokemon.id === id
@@ -46,7 +46,7 @@ export class CatalogoPokemon {
             console.log("[AVISO] Nenhum Pokémon encontrado com esse ID.");
             return;
         }
-
+        
         this.pokemons = this.pokemons.filter(
             (pokemon) => pokemon.id !== id
         );
