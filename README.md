@@ -45,7 +45,11 @@ Antes de executar o projeto, é necessário ter instalado:
 Clone o repositório:
 
 ```bash
+<<<<<<< HEAD
 git clone https://github.com/paulaschiessl31/Pokedex-TypeScript-Lite
+=======
+git clone LINK_DO_REPOSITORIO
+>>>>>>> feature/pokedex-terminal
 ```
 
 Acesse a pasta do projeto:
