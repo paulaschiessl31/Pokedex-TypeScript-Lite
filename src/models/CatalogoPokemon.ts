@@ -30,8 +30,27 @@ export class CatalogoPokemon {
 
         this.pokemons.forEach((pokemon) => {
             console.log(
-                `#${pokemon.id} - ${pokemon.nome} | Tipos: ${pokemon.tipos.join(",")} | Altura: ${pokemon.altura} | Peso: ${pokemon.peso}`
+                `#${pokemon.id} - ${pokemon.nome} | Tipos: ${pokemon.tipos.join(",")}`
             ); 
         }); 
-    }  
+    }
+
+    // RF10 - Remover Pokémon do catálogo pelo ID.
+    // Verifica se o Pokémon existe e remove usando filter().
+    remover(id: number): void {
+        const existe = this.pokemons.some(
+            (pokemon) => pokemon.id === id
+        );
+
+        if (!existe) {
+            console.log("[AVISO] Nenhum Pokémon encontrado com esse ID.");
+            return;
+        }
+
+        this.pokemons = this.pokemons.filter(
+            (pokemon) => pokemon.id !== id
+        );
+
+        console.log("[OK] Pokémon removido do catálogo.");
+    }
 }
