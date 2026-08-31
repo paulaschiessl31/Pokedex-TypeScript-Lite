@@ -45,11 +45,7 @@ Antes de executar o projeto, é necessário ter instalado:
 Clone o repositório:
 
 ```bash
-<<<<<<< HEAD
 git clone https://github.com/paulaschiessl31/Pokedex-TypeScript-Lite
-=======
-git clone LINK_DO_REPOSITORIO
->>>>>>> feature/pokedex-terminal
 ```
 
 Acesse a pasta do projeto:
@@ -194,7 +190,7 @@ O projeto utiliza tipagem explícita em interfaces, parâmetros, variáveis e re
 
 ### Interface `PokemonResumo`
 
-A interface `PokemonResumo` define o formato dos dados que o sistema utiliza para representar um Pokémon:
+A interface `PokemonResumo`, localizada em `src/models/Pokemon.ts`, define o formato dos dados que o sistema utiliza para representar um Pokémon:
 
 * ID
 * Nome
@@ -207,7 +203,7 @@ A interface `PokemonResumo` define o formato dos dados que o sistema utiliza par
 
 ### Interface `PokemonApiResponse`
 
-A interface `PokemonApiResponse` representa os dados recebidos da PokeAPI que são necessários para o funcionamento do projeto.
+A interface `PokemonApiResponse`, localizada em `src/models/Pokemon.ts`, representa os dados recebidos da PokeAPI que são necessários para o funcionamento do projeto.
 
 ### Fetch e async/await
 
@@ -267,6 +263,7 @@ https://github.com/users/paulaschiessl31/projects/2
 * `feat/pokedex`
 * `feature/pokedex-terminal`
 
+Desenvolvido por Ana Paula Schiessl.
 ## Melhorias futuras
 
 Algumas possibilidades de evolução do projeto:
